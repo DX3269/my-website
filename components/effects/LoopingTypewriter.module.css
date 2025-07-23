@@ -1,0 +1,29 @@
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.title {
+  font-size: clamp(2rem, 10vw, 5rem);
+  font-weight: 800;
+  line-height: 1.2;
+  color: var(--text-color);
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  white-space: pre-wrap;
+  padding: 1rem;
+}
+
+.typewriterText {
+  /* The blinking cursor effect */
+  border-right: 4px solid var(--link-hover-color);
+  animation: blinkCursor 0.75s step-end infinite;
+  color: var(--link-hover-color); /* Make the typed text stand out */
+}
+
+@keyframes blinkCursor {
+  from, to { border-color: transparent }
+  50% { border-color: var(--link-hover-color); }
+}

@@ -1,0 +1,45 @@
+.aboutSection {
+  width: 100%;
+  max-width: 1000px;
+  margin-top: 4rem; /* Adds space between the Tech Stack and About sections */
+  padding: 2.5rem;
+  /* Reusing your existing variables for the luminous effect */
+  background: var(--card-bg);
+  border: 1px solid var(--card-border-color);
+  border-radius: 15px;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+}
+
+/* This class is identical to the one in TechStack.module.css for consistency */
+.title {
+  text-align: center;
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 2rem;
+  color: var(--text-color);
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+
+.content {
+  max-width: 800px; /* Constrains the width of the text for readability */
+  margin: 0 auto; /* Centers the content div */
+}
+
+.bio {
+  font-size: 1.1rem;
+  line-height: 1.7;
+  color: var(--text-color-light);
+  margin-bottom: 1.5rem;
+  text-align: justify;
+}
+
+.pointsList {
+  list-style-type: '•   '; /* A custom bullet point for a unique look */
+  padding-left: 1.5rem;
+  font-size: 1.1rem;
+  line-height: 1.7;
+  color: var(--text-color-light);
+}

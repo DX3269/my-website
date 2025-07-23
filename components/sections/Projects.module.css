@@ -1,0 +1,68 @@
+.projectsSection {
+  width: 100%;
+  max-width: 1000px;
+  margin-top: 4rem; 
+  padding: 2.5rem;
+  background: var(--card-bg);
+  border: 1px solid var(--card-border-color);
+  border-radius: 15px;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+}
+
+.title {
+  text-align: center;
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 3rem;
+  color: var(--text-color);
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 1.5rem;
+  /* ADDED: This property fixes the overlapping issue */
+  grid-auto-rows: 1fr;
+}
+
+@media (min-width: 768px) {
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.card {
+  background: var(--inner-card-bg); 
+  border-radius: 10px;
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.projectName {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: var(--text-color);
+  margin: 0 0 1rem 0;
+  border-bottom: 1px solid var(--card-border-color);
+  padding-bottom: 0.75rem;
+  text-align: center;
+}
+
+.description {
+  list-style-type: '▸ ';
+  padding-left: 1.2rem;
+  margin: 0;
+  color: var(--text-color-light);
+  line-height: 1.6;
+  flex-grow: 1;
+}

@@ -1,0 +1,70 @@
+.techStackSection {
+  width: 100%;
+  max-width: 1000px;
+  margin-top: 2rem; /* Space below the typewriter text */
+  padding: 2rem 1rem;
+}
+
+.title {
+  text-align: center;
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 3rem;
+  color: var(--text-color);
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  
+}
+
+.grid {
+  display: grid;
+  /* Creates a responsive grid with 2 columns on mobile, 3 on larger screens */
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.5rem;
+}
+
+/* On screens wider than 768px, switch to 3 columns */
+@media (min-width: 768px) {
+  .grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.card {
+  background: var(--card-bg); /* Using the new CSS variable for the glass effect */
+  border: 1px solid var(--card-border-color);
+  border-radius: 15px;
+  padding: 2rem 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px); /* For Safari browser support */
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 40px rgba(0, 0, 0, 0.2);
+}
+
+.iconWrapper {
+  margin-bottom: 1rem;
+  color: var(--text-color);
+}
+
+.skillName {
+  font-size: 1.1rem;
+  font-weight: 500;
+  color: var(--text-color);
+  margin: 0;
+}
+
+/* For the combined HTML & CSS icon */
+.multiIcon {
+  display: flex;
+  gap: 0.75rem;
+}

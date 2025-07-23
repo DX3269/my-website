@@ -1,0 +1,87 @@
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 5rem;
+  background: var(--navbar-bg); /* Use background for gradients */
+  color: var(--text-color);
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 2rem;
+  transition: background 0.3s ease, color 0.3s ease;
+  z-index: 50;
+  font-family: "Bitcount Prop Single", system-ui;
+}
+
+.brand {
+  font-size: 1.8rem;
+  font-weight: 500;
+}
+
+.brand a {
+  /* UPDATED: Explicitly setting the color */
+  color: var(--text-color-light);
+  text-decoration: none;
+}
+
+.navList {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.navLink a {
+  font-size: 1.5rem;
+  font-weight: 500;
+  /* This rule should now apply correctly */
+  color: var(--text-color-light);
+  text-decoration: none;
+  transition: color 0.2s ease-in-out;
+}
+
+.navLink a:hover {
+  color: var(--link-hover-color);
+}
+
+/* ... the rest of your file remains the same ... */
+.controls {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.themeToggleButton {
+  background-color: var(--toggle-bg);
+  border: none;
+  padding: 0.65rem;
+  margin-right: 3rem;
+  border-radius: 9999px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.themeToggleButton:hover {
+    background-color: var(--toggle-bg-hover);
+}
+
+@media (max-width: 768px) {
+  .navList {
+    display: none;
+  }
+  .controls > div:last-child {
+      display: block;
+  }
+  .navbar {
+    padding: 0 1rem;
+  }
+}

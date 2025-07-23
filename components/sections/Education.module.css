@@ -1,0 +1,77 @@
+.educationSection {
+  width: 100%;
+  max-width: 1000px;
+  /* This margin-top keeps the spacing consistent with the About section */
+  margin-top: 4rem; 
+  padding: 2.5rem;
+  background: var(--card-bg);
+  border: 1px solid var(--card-border-color);
+  border-radius: 15px;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+}
+
+.title {
+  text-align: center;
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 2rem;
+  color: var(--text-color);
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+
+.logoContainer {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 2.5rem;
+}
+
+.logo {
+  filter: drop-shadow(0 4px 8px rgba(0,0,0,0.2));
+}
+
+.timeline {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem; /* Space between each education entry */
+}
+
+.entry {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start; /* Aligns items to the top */
+  gap: 1rem;
+  border-bottom: 1px solid var(--card-border-color);
+  padding-bottom: 1.5rem;
+}
+
+.entry:last-child {
+  border-bottom: none; /* Removes the border from the last item */
+}
+
+.schoolInfo {
+  text-align: left;
+}
+
+.schoolName {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: var(--text-color);
+  margin: 0 0 0.25rem 0;
+}
+
+.degree {
+  font-size: 1rem;
+  color: var(--text-color-light);
+  margin: 0;
+}
+
+.years {
+  font-size: 1.1rem;
+  font-weight: 500;
+  color: var(--text-color);
+  white-space: nowrap; /* Prevents the year from wrapping */
+  padding-top: 0.25rem;
+}

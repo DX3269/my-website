@@ -1,0 +1,102 @@
+.experienceSection {
+  width: 100%;
+  max-width: 1000px;
+  margin-top: 4rem; 
+  padding: 2.5rem;
+  background: var(--card-bg);
+  border: 1px solid var(--card-border-color);
+  border-radius: 15px;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+}
+
+.title {
+  text-align: center;
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 3rem;
+  color: var(--text-color);
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+
+.experienceContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+}
+
+.cardHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 1.5rem; /* Increased margin */
+  gap: 1rem;
+}
+
+/* UPDATED: This class now groups the logo and text */
+.companyDetails {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.companyLogo {
+  border-radius: 8px;
+  flex-shrink: 0; /* Prevents the logo from shrinking */
+}
+
+/* ADDED: This class stacks the company name and job title */
+.titleGroup {
+  display: flex;
+  flex-direction: column;
+}
+
+/* ADDED: Style for the main company name heading */
+.companyName {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: var(--text-color);
+  margin: 0;
+  line-height: 1.2;
+}
+
+/* UPDATED: Style for the job title subheading */
+.jobTitle {
+  font-size: 1rem;
+  font-weight: 400;
+  color: var(--text-color-light);
+  margin: 0;
+}
+
+.dates {
+  font-size: 1rem;
+  font-weight: 500;
+  color: var(--text-color-light);
+  white-space: nowrap;
+  padding-top: 0.25rem;
+}
+
+.description {
+  list-style-type: '- ';
+  padding-left: 1.5rem;
+  margin-bottom: 1.5rem;
+  color: var(--text-color);
+  line-height: 1.6;
+}
+
+.technologies {
+  font-size: 0.9rem;
+  color: var(--text-color-light);
+  margin-top: auto;
+}
+
+.technologies strong {
+  color: var(--text-color);
+}

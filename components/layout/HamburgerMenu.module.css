@@ -1,0 +1,76 @@
+.hamburgerContainer {
+  display: none; /* Hidden by default, shown via media query in Navbar.module.css */
+  z-index: 101;
+}
+
+.hamburgerButton {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  position: relative;
+}
+
+.bar {
+  width: 25px;
+  height: 3px;
+  background-color: var(--text-color);
+  transition: all 0.3s ease-in-out;
+  border-radius: 2px;
+}
+
+/* Animation for hamburger to 'X' */
+.bar1Open {
+  transform: rotate(45deg) translate(5px, 5px);
+}
+.bar2Open {
+  opacity: 0;
+}
+.bar3Open {
+  transform: rotate(-45deg) translate(7px, -6px);
+}
+
+.mobileMenu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent backdrop */
+  backdrop-filter: blur(5px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease, visibility 0.3s ease;
+  z-index: 100;
+}
+
+.showMenu {
+  opacity: 1;
+  visibility: visible;
+}
+
+.mobileNavList {
+  list-style: none;
+  padding: 0;
+  text-align: center;
+}
+
+.mobileNavLink {
+  color: var(--text-color);
+  text-decoration: none;
+  font-size: 2rem;
+  font-weight: bold;
+  padding: 1rem;
+  display: block;
+  transition: color 0.2s;
+}
+
+.mobileNavLink:hover {
+  color: var(--link-hover-color);
+}

@@ -1,0 +1,78 @@
+.resumeSection {
+  width: 100%;
+  max-width: 1000px;
+  /* This margin-top keeps the spacing consistent */
+  margin-top: 4rem; 
+  padding: 3rem 2.5rem;
+  background: var(--card-bg);
+  border: 1px solid var(--card-border-color);
+  border-radius: 15px;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  color: var(--text-color);
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+
+.subtitle {
+  font-size: 1.1rem;
+  color: var(--text-color-light);
+  margin-bottom: 2.5rem;
+  max-width: 400px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.buttonContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
+  flex-wrap: wrap; /* Allows buttons to stack on small screens */
+}
+
+.button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.75rem;
+  font-size: 1.1rem;
+  font-weight: 600;
+  padding: 0.8rem 1.8rem;
+  border-radius: 8px;
+  border: 2px solid transparent;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.primaryButton {
+  background-color: var(--link-hover-color);
+  color: #ffffff;
+}
+
+.primaryButton:hover {
+  background-color: transparent;
+  border-color: var(--link-hover-color);
+  color: var(--link-hover-color);
+}
+
+.secondaryButton {
+  background-color: transparent;
+  border-color: var(--text-color-light);
+  color: var(--text-color);
+}
+
+.secondaryButton:hover {
+  background-color: var(--text-color);
+  border-color: var(--text-color);
+  color: var(--navbar-bg); /* A neat trick to use the background color for text */
+}

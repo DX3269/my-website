@@ -6,7 +6,7 @@ const experienceData = [
     logo: '/comp_logo_1.jpg',
     company: 'Motherson Technology and Services Limited',
     title: 'Data Analysis Internship',
-    dates: 'August 2023 - September 2023',
+    dates: 'Aug 2023 - Sept 2023',
     description: [
       'Completed a one month internship in Data Analysis domain.',
       'Used Ms Excel for Data cleaning and transformation.',
@@ -19,7 +19,7 @@ const experienceData = [
     logo: '/comp_logo_2.jpg',
     company: 'Kradle Joy OPC limited',
     title: 'Internship',
-    dates: 'July 2024 - September 2024',
+    dates: 'Jul 2024 - Sept 2024',
     description: [
       ' Completed a 45 days internship in machine learning domain.',
       ' Developed Python Scripts for OCR analysis using Easy OCR and OpenCV',

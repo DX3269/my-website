@@ -8,12 +8,12 @@ const socialLinks = [
   {
     name: 'LinkedIn',
     icon: <FaLinkedin size={24} />,
-    url: 'https://www.linkedin.com/in/your-profile-url',
+    url: 'https://www.linkedin.com/in/ayushdx',
   },
   {
     name: 'GitHub',
     icon: <FaGithub size={24} />,
-    url: 'https://github.com/your-username',
+    url: 'https://github.com/DX3269',
   },
   {
     name: 'Email',

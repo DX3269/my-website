@@ -2,6 +2,7 @@ import './globals.css';
 import { ThemeProvider } from '../contexts/ThemeContext';
 import Navbar from '../components/layout/Navbar';
 import Footer from '../components/layout/Footer'; // <-- Import the new component
+import { Analytics } from '@vercel/analytics/next';
 
 export const metadata = {
   title: 'My Portfolio',
@@ -29,6 +30,7 @@ export default function RootLayout({ children }) {
             <Footer /> {/* <-- Add the new component here */}
           </div>
         </ThemeProvider>
+        <Analytics/>
       </body>
     </html>
   );
